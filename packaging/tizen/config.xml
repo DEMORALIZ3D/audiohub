@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:tizen="http://tizen.org/ns/widgets" 
+        id="http://audiohub.homelab/Audiohub" 
+        version="1.0.0" 
+        height="1080" 
+        width="1920" 
+        viewmodes="maximized">
+    <tizen:application id="Audiohub01.Audiohub" package="Audiohub01" required_version="2.3"/>
+    <name>Audiohub</name>
+    <description>Audiohub - homelab entertainment (Samsung Smart TV)</description>
+    <author href="https://example.com">Audiohub</author>
+    <tizen:profile name="tv-samsung"/>
+    <content src="index.html"/>
+    <icon src="icon.png"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="2.3"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/multitasking.support" value="true"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <access origin="*" subdomains="true"/>
+</widget>

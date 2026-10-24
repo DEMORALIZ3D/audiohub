@@ -1,0 +1,39 @@
+{
+  "name": "Audiohub - homelab entertainment",
+  "short_name": "Audiohub",
+  "description": "homelab entertainment",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["focus-existing", "navigate-new"]
+  },
+  "capture_links": "existing-client-navigate",
+  "icons": [
+    {
+      "src": "/icon.svg?v=2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg?v=2",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

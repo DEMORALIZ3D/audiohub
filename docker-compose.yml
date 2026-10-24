@@ -1,0 +1,20 @@
+services:
+  audiohub:
+    build: .
+    container_name: audiohub
+    restart: unless-stopped
+    mem_limit: 768m
+    mem_reservation: 128m
+    ports:
+      - "${PORT:-4533}:4533"
+    environment:
+      - PORT=4533
+      - STORAGE_MODE=${STORAGE_MODE:-stream_only}
+      - MAX_CACHE_GB=${MAX_CACHE_GB:-25}
+      - DATA_DIR=/data
+      - MUSIC_DIR=/music
+      - SECRET_KEY=${SECRET_KEY:-audiohub-change-me-in-production}
+      - TZ=${TZ:-UTC}
+    volumes:
+      - ./data:/data
+      - ${MUSIC_DIR:-./music}:/music

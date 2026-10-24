@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/packages/fallow/schema.json",
+  "entry": [
+    "src/main.tsx",
+    "src/test/setup.ts",
+    "public/sw.js"
+  ],
+  "ignorePatterns": [
+    "node_modules/**",
+    "dist/**",
+    "test-results/**",
+    "playwright-report/**",
+    "src/components/ScannerModal.tsx"
+  ],
+  "ignoreDependencies": [
+    "@capacitor/android",
+    "tesseract.js"
+  ],
+  "ignoreExports": [
+    {
+      "file": "src/utils/shuffleUtils.ts",
+      "exports": ["shuffleArray"]
+    }
+  ]
+}

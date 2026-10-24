@@ -1,0 +1,18 @@
+{
+  "id": "com.audiohub.music.tv",
+  "version": "1.0.0",
+  "vendor": "AudioHub",
+  "type": "web",
+  "main": "index.html",
+  "title": "Audiohub",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "bgColor": "#070709",
+  "resolution": "1920x1080",
+  "transparent": false,
+  "handlesRelaunch": true,
+  "accessibility": {
+    "supportsAudioGuidance": true
+  },
+  "requiredMemory": 128
+}
